@@ -1,0 +1,70 @@
+@mixin social-links {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #696969;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links__list {
+    display: flex;
+    gap: 25px;
+    } 
+
+.social-links__list-href {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.list-href__vk {
+    background-image: url("../img/vk.svg");
+    @include social-links;
+}
+.list-href__instagram {
+    background-image: url("../img/instagram.svg");
+   @include social-links;
+}
+.list-href__youtube {
+    background-image: url("../img/youtube.svg");
+    @include social-links;
+}
+
+.footer__text {
+    font-family: "Gilroy";
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer__logo {
+    padding-bottom: 0px;
+    height: 100px;
+}
+
+h5 {
+    color: #bdaaffea;
+    margin: 0px;
+    padding-bottom: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 500px) {
+    .footer__inner {
+        justify-content: center;
+        gap: 45px;
+        padding: 45px 0;
+    }
+}

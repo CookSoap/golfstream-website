@@ -1,0 +1,70 @@
+$main-color: #bdd2ff;
+$text-color: #4ab5e6;
+@import "low-scss/reset.scss";
+//шрифты 
+@import "low-scss/fonts.scss";
+// импорт header
+@import "low-scss/header.scss";
+// импорт banner 
+@import "low-scss/banner.scss";
+//услуги 
+@import "low-scss/services.scss";
+//новости
+@import "low-scss/news.scss";
+// партнёры
+@import "low-scss/partners.scss";
+//контакты
+@import "low-scss/contacts.scss";
+// импорт footer
+@import "low-scss/footer.scss";
+// import Swiper styles
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "low-scss/swiper-bundle.scss";
+
+
+
+.swiper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    overflow:visible;
+}
+
+:root {
+    --swiper-theme-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,115,189,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+body {
+    font-family: "Gilroy";
+    background-color: $main-color;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+
+.b-container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.s-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 10px;
+} 
+
+h2 {
+    font-family: "FiraSansExtraCondensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+}
+
